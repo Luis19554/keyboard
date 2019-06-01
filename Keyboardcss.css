@@ -1,0 +1,203 @@
+body{
+  background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462434_960_720.jpg); /*Lägger bild med kopiera bildaddress */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#keyboardstructure{  /*  här är strukturen på tangentbordet  */
+  width: 66vw;
+  height: 45vh;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 190px;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  border-right: 5px solid gold;
+  border-left: 5px solid gold;
+  /*runda kanter istället för spetsiga*/
+  border-radius: 6px;
+  }
+
+/* anger storleken på första raden */
+
+#firstline{
+  margin-left: auto;
+  margin-right: auto;
+  width: 82.5vw;
+  height: 4vh;
+}
+
+/*Första raden av tangenterna som är F1 tangenter */
+#struct{
+  /* gör så att de har mellanrum och inte krockar med varandra */
+  display: inline-block;
+  padding-right: 2px;
+  padding-left:  8px;
+  padding-top: 5px;
+}
+
+#firstline2{
+  display: inline-block;
+}
+
+p{
+  color: white; /* ger färg */
+  text-align: center; /* centrerar dem */
+}
+
+.tangent{
+  display: inline-block;
+  width: 3.8vw;
+  height: 5vh;
+  font-size: 10px;
+  background-color: black;   /*samma storlek, färg och border för alla tangenter*/
+  border: 1px solid blue;
+  border-radius: 10px;
+}
+
+.line1{
+  /* Samma storlek på alla F1- delete tangenter (första raden) samt ändring av storleken på symbolerna */
+  display: inline-block;
+  width: 3.5vw;
+  height: 3vh;
+  background-color: black;
+  font-size: 8px;
+  border: 1px solid blue;
+  border-radius: 10px;
+}
+
+.f{
+  /*  f tangerterna (arrows) ska ha samma storlek */
+  display: inline-block;
+  width: 2.8vw;
+  height: 3vh;
+  background-color: black;
+  font-size: 7px;
+  border: 1px solid blue;
+  border-radius: 10px;
+}
+
+/* Diven för rad "2" */
+#line2{
+display: inline-block;
+padding-left: 10px;
+padding-top: 8px;
+padding-bottom: 10px;
+margin-right: 25px;
+}
+
+#del{
+  display: inline-block;
+  width: 7.6vw;
+  height: 5vh; /* måste reglera storleken på delete eftersom den är större än de andra */
+  background-color: black;
+}
+
+/* Diven för rad "3" */
+#line3{
+  display: inline-block;
+  margin-left: 10px;
+  padding-left: 1px;
+}
+
+#tab{ /* Tab tangentet är större än de andra tangenter, därför behöver man göra den separat*/
+  display: inline-block;
+  width: 6vw;
+  height: 5vh;
+  background-color: black;
+}
+
+/*enter är större i storlek (längd och minde i bredd än de andra tangenter) därför gör man den separat*/
+#enter{
+  display: inline-block;
+  width: 5.4vw;
+  height: 5vh;
+  background-color: black;
+  border-right: 1px solid blue;
+  border-bottom: 1px solid blue;
+  border-left: 1px solid blue;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;:
+}
+#ent{  /* ent är en annan div för enter, för att ge den formen som tangent bordet egentligen har */
+  background-color: black;
+  width: 3vw;
+  height: 8vh;
+  float: right;
+  margin-top: -12.4px;
+  margin-left: 9px;
+  border-right: 1px solid blue;
+  border-bottom: 1px solid blue;
+  border-left: 1px solid blue;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: -11px;
+}
+/* Diven för rad "3" */
+#line4{
+  display: inline-block;
+  margin-left: 10px;
+  padding-left: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* caps olikt från de andra tangenter, måste justeras för sig själv*/
+#caps{
+  display: inline-block;
+  width: 8vw;
+  height: 5vh;
+  background-color: black;
+}
+
+/* diven för rad "5" */
+#line5{
+  display: inline-block;
+  padding-left: 15px;
+  padding-top: 2px;
+  padding-bottom: 10px;
+}
+/* här gäller det i stort sätt samma sak för alla här nere, olika storleker på tangenterna gör att man måste ta var och en för sig*/
+#shift{
+  display: inline-block;
+  width: 6.5vw;
+  height: 5vh;
+  background-color: black;
+}
+#shift2{
+  display: inline-block;
+  width: 9vw;
+  height: 5vh;
+  background-color: black;
+}
+/* diven för rad "6"*/
+#line6{
+  margin-left: 10px;
+  display: inline-block;
+  padding-left: 4px;
+  padding-top: 2px;
+  padding-bottom: 10px;
+}
+
+#ctrl{
+  display: inline-block;
+  width: 6.5vw;
+  height: 5vh;
+  background-color: black;
+}
+
+#space{
+  display: inline-block;
+  width: 25vw;
+  height: 5vh;
+  background-color: black;
+}
+
+#arrows{
+  float:right;
+  margin-right: 20px;
+  display: inline-block;
+  padding-left: 2px;
+  margin-top: -10px;
+}
